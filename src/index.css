@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-ocean;
+    @apply text-white;
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .bg-ocean-card {
+    @apply bg-slate-900/50 backdrop-blur-xl border border-cyan-500/20 rounded-xl;
+  }
+
+  .bg-ocean-card-hover {
+    @apply hover:border-cyan-500/40 hover:shadow-neon-cyan transition-all duration-300;
+  }
+
+  .text-gradient-ocean {
+    @apply bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent;
+  }
+
+  .btn-ocean-primary {
+    @apply bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-neon-cyan;
+  }
+
+  .btn-ocean-green {
+    @apply bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-neon-green;
+  }
+
+  .btn-ocean-orange {
+    @apply bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-neon-orange;
+  }
+
+  .card-ocean-glow {
+    @apply shadow-xl shadow-cyan-500/10;
+  }
+
+  .border-ocean-glow {
+    @apply border border-cyan-500/30 shadow-neon-cyan;
+  }
+
+  .text-neon-cyan {
+    @apply text-cyan-400;
+  }
+
+  .text-neon-green {
+    @apply text-green-400;
+  }
+
+  .text-neon-orange {
+    @apply text-orange-500;
+  }
+}
